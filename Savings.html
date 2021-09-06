@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+
+    <title>פעמונים | שיראל ואביטל</title>
+
+    <meta name="description" content="חסכונות והשקעות" />
+    <meta
+      name="keywords"
+      content=" כסף,  כלכלה, איך חוסכים, חיסכון, קרן פנסיה, פנסיה, קרן השתלמות, השקעות, קופת גמל, פיקדון, חסכונות, פיקדונות, זכויות, משוחררים, בנק, פעמונים "
+    />
+    <meta name="author" content="שיראל דנינו, אביטל מעיין " />
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png" />
+  </head>
+  <body>
+      <header>
+          <!-- תפריט ניווט -->
+
+          <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand brandSavings">
+                  <a class="navbar-item" href="EffectiveGoal.html">
+                      <img id="logoP" src="images/logo.jpg" />
+                  </a>
+
+                  <a role="button"
+                     class="navbar-burger"
+                     aria-label="menu"
+                     aria-expanded="false"
+                     data-target="navbarBasicExample">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                  </a>
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-end">
+                      <a class="navbar-item" href="EffectiveGoal.html"> יעד אפקטיבי </a>
+                      <a class="navbar-item" href="TheBank.html"> אני והבנק </a>
+                      <a class="navbar-item is-active" href="Savings.html"> חסכונות והשקעות </a>
+                      <a class="navbar-item" href="Paycheck.html"> תלוש שכר </a>
+
+                      <a class="navbar-item" onclick="on()">  אודות </a>
+                  </div>
+
+                  <div class="navbar-end"></div>
+              </div>
+          </nav>
+
+          <!-- כניסה לאתר -->
+
+          <section id="OpenSection">
+              <div class="columns">
+                  <div class="column" style="max-width: 600px">
+                      <h1 class="title titlePhoon is-size-1 is-size-2-mobile">
+                          מה הדבר הכי טוב <br />
+                          <b>שאפשר לעשות עם הכסף שלכם?</b>
+                      </h1>
+                  </div>
+
+
+                  <div class="column">
+                      <div id="introPic" class="OpenPic">
+                          <div style="margin: auto">
+
+                              <div class="PNG-container">
+
+                                  <img class="myPNG" src="images/Saving1.png" />
+
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+
+
+
+          <!-- אודות---------------------------------------------------------------------- -->
+
+          <div id="overlay" onclick="off()">
+
+
+              <div class="modal-content has-background-white py-5 px-5 popUp1" style="text-align: center" ;>
+                  <h3 class="title Odot" mb-6> </h3>
+
+                  <div id="aboutDiv">
+
+                      <h2 class="Odot">אודות </h2>
+                      <p id="odotTxt1">
+                          אפיון ופיתוח: <br />
+                          שיראל דנינו | אביטל מעיין
+                      </p>
+                      <p id="odotTxt2">
+                          אופיין ופותח במסגרת קורס פרויקט גמר:<br />
+                          תשפ"א | 2021
+                      </p>
+
+
+                      <img class="HitOdotLogo" src="images/hitLogoBlak.png" /> <br />
+                      <a id="telem" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a> <br />
+
+
+                      <p>   התוצר הופק עבור עמותת<a href="https://www.paamonim.org/he/%D7%A2%D7%9C-%D7%94%D7%90%D7%A8%D7%92%D7%95%D7%9F/"> פעמונים </a> </p>
+
+                      <p>
+                          <b>
+                              עמותת פעמונים היא עמותה חברתית.
+                              העמותה שואפת למציאות שבה משפחות ויחידים בישראל ינהלו חיים כלכליים, מאוזנים ואחראיים בדרך ישרה – מציאות שתסייע בבניית חוסן כלכלי-חברתי.
+                          </b>
+                      </p>
+
+
+                      <p">
+                          **האמור באתר זה אינו מהווה ייעוץ/שיווק השקעות ו/או
+                          ייעוץ/שיווק פנסיוני ו/או תחליף לייעוץ/שיווק כאמור המתחשב בנתונים ובצרכים המיוחדים של כל אדם.
+                          </p>
+
+
+                          <p>
+                              Credits: This project includes icons by <a href="https://www.freepik.com/">freepik</a>
+
+                          </p>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- עד כאן אודות---------------------------------------------------------------------- -->
+
+
+      </header>
+
+      <section class="Opening_Bank1 ">
+          <div>
+              <p class="is-size-1 is-size-3-mobile Savings2 title1" style="padding-bottom:45px">
+                  <b>חסכונות והשקעות</b>
+              </p>
+
+          </div>
+          <!-------------------------------------------------------------==========================--------------------------------->
+          <!--צאט פתיחה-->
+
+
+
+          <section id="OpenSection">
+              <div class="columns">
+                  <div class="column" style="max-width: 600px">
+
+                      <div class="savingA">
+
+                          <section class="section pt-0 questionA is-flex-direction-column">
+                              <div class="Chat_Savings_B">
+                                  <!-- צד ימין -->
+                                  <div class="is-flex-direction-column Chat_Savings has-text-white">
+
+                                      <figure class="emoji--container_Saving right">
+                                          <img class="is-rounded emoji_Saving" src="images/eyebrow.png" />
+                                      </figure>
+                                      <img class="text_boxChat" src="images/textbox1-03.png" />
+                                      <span>
+
+                                          הבנתי שלחסוך, אבל למה זה חשוב לחסוך?
+
+                                      </span>
+
+
+                                      <!-- צד שמאל -->
+                                  </div>
+
+                                  <div class="is-flex-direction-column Chat_Savings ">
+
+                                      <figure class="emoji--container_Saving left">
+                                          <img class="is-rounded emoji_Saving" src="images/Stars.png" />
+                                      </figure>
+                                      <img class="text_boxChat" src="images/textBoxW-03.png" />
+                                      <span>
+
+                                          כדי להגיע ליעד שלך ולהבטיח את העתיד שלך, במקרה של הוצאה בלתי צפויה וכו’.
+                                      </span>
+
+                                  </div>
+
+                                  <!-- צד ימין -->
+                                  <div class="is-flex-direction-column Chat_Savings has-text-white">
+
+                                      <figure class="emoji--container_Saving right">
+                                          <img class="is-rounded emoji_Saving" src="images/mouth.png" />
+                                      </figure>
+                                      <img class="text_boxChat" src="images/textbox1-03.png" />
+                                      <span>
+
+                                          תכל'ס אין לי עכשיו הרבה כסף, רלוונטי לי לחסוך בכלל?
+
+
+                                      </span>
+
+                                      <!-- צד שמאל -->
+                                  </div>
+
+                                  <div class="is-flex-direction-column Chat_Savings ">
+
+                                      <figure class="emoji--container_Saving left">
+                                          <img class="is-rounded emoji_Saving" src="images/Angel.png" />
+                                      </figure>
+                                      <img class="text_boxChat" src="images/textBoxW-03.png" />
+                                      <span>
+
+
+                                          כן! חשוב להבין שגם אם אנחנו חוסכים מעט,
+                                          החיסכון הקטן הזה
+                                          במקרה חירום עדיף על פני מצב בו אין חסכונות בכלל.
+
+                                      </span>
+
+                                  </div>
+
+                              </div>
+
+
+
+                          </section>
+                      </div>
+
+                  </div>
+
+                  <div class="column">
+                      <div>
+                          <div class="savingA">
+
+                              <section class="section pt-0 questionA is-flex-direction-column">
+                                  <div class="Chat_Savings_B">
+                                      <!-- צד ימין -->
+                                      <div class="is-flex-direction-column Chat_Savings has-text-white">
+
+                                          <figure class="emoji--container_Saving right">
+                                              <img class="is-rounded emoji_Saving" src="images/3surprised.png" />
+                                          </figure>
+                                          <img class="text_boxChat" src="images/textbox1-03.png" />
+                                          <span>
+
+
+                                              הבנתי! עכשיו.. איך אני עושה את זה?
+
+
+                                          </span>
+
+
+                                          <!-- צד שמאל -->
+                                      </div>
+
+                                      <div class="is-flex-direction-column Chat_Savings ">
+
+                                          <figure class="emoji--container_Saving left">
+                                              <img class="is-rounded emoji_Saving" src="images/Sunglasses.png" />
+                                          </figure>
+                                          <img class="text_boxChat" src="images/textBoxWX-08.png" />
+                                          <span>
+
+                                              מומלץ להתחיל בלשים בצד  סכום כסף באופן קבוע עבור החיסכון ואז להתנהל עם הכסף שנשאר.
+                                              לדוגמא : אם אני רוצה לחסוך 8000 שקלים תוך 8 חודשים, אשים בכל חודש 1000 שקלים בצד.
+
+
+                                          </span>
+
+                                      </div>
+
+
+                                      <!-- צד ימין -->
+                                      <div class="is-flex-direction-column Chat_Savings has-text-white">
+
+                                          <figure class="emoji--container_Saving right">
+                                              <img class="is-rounded emoji_Saving" src="images/tongue_out.png" />
+                                          </figure>
+                                          <img class="text_boxChat" src="images/textbox1-03.png" />
+                                          <span>
+
+                                              טיל. ישלך איזה טיפ להתחלה?
+
+                                          </span>
+
+
+                                          <!-- צד שמאל -->
+                                      </div>
+
+                                      <div class="is-flex-direction-column Chat_Savings ">
+
+                                          <figure class="emoji--container_Saving left">
+                                              <img class="is-rounded emoji_Saving" src="images/kiss.png" />
+                                          </figure>
+                                          <img class="text_boxChat" src="images/textbox4-03.png" />
+                                          <span>
+                                              ברור! לגלול למטה ולהבין מה מתאים לך.
+                                          </span>
+                                        
+                                      </div>
+
+
+                                  </div>
+
+
+
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+
+
+      </section>
+
+
+
+      <!-------------------------------------------------------------==========================--------------------------------->
+      <!----קרוסלה-->
+
+      <section class="section px-10 py-1 carouselaA">
+
+          <div id=" SavingsOptions" class=" mb-5">
+
+              <h2 class=" is-size-1 is-size-3-mobile Savings2 TitleColor anim">
+                  <b>אפשרויות חיסכון</b>
+              </h2>
+              <p class=" is-size-4 is-size-8-mobile ManagementFee2 anim">
+                  <span class=" is-size-5 is-size-10-mobile has-text-right ">
+                      *התוכן אינו מחליף יועץ אמיתי. במידת הצורך יש להתייעץ עם יועצים מומחים.
+                  </span>
+
+              </p>
+
+          </div>
+         
+
+
+          <div class="carousela anim">
+              <div class="carousel carousel-nav "
+                   data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+                  <div class="carousel-cell">
+                      <h2 class="is-size-6 is-size-10-mobile NevTitle">אפשרויות נוספות </h2>
+                  </div>
+
+                  <div class="carousel-cell">
+                      <h2 class="is-size-6 is-size-10-mobile NevTitle">קרן השתלמות </h2>
+                  </div>
+                  <div class="carousel-cell">
+                      <h2 class="is-size-6 is-size-10-mobile NevTitle">חסכון פיננסי</h2>
+                  </div>
+                  <div class="carousel-cell">
+                      <h2 class="is-size-6 is-size-10-mobile  NevTitle">פיקדון בבנק </h2>
+                  </div>
+                  <div class="carousel-cell">
+                      <h2 class="is-size-6 is-size-10-mobile  NevTitle">קופת גמל </h2>
+                  </div>
+
+                  <div class="carousel-cell">
+
+                      <h2 class="is-size-6 is-size-10-mobile  NevTitle">קרן פנסיה</h2>
+                  </div>
+              </div>
+
+              <div class="carousel carousel-main" data-flickity>
+                  <div class="carousel-cell">
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile ">אפשרויות נוספות </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              ישנם אין ספור אפיקי השקעה בתחומים שונים: שוק ההון, נדלן, השקעות חברתיות, מטבעות וירטואליים, גגות סולריים, שדות חקלאיים ועוד המון אופציות. כדי להתחיל כדאי לבחור בתחום שאתם מאמינים בהצלחתו לחקור אותו היטב ולהבין בו וכמובן להתייעץ עם מומחים רלוונטיים לתחום.
+                              <br />
+                              <br />
+                          </p>
+                      </div>
+
+                  </div>
+                  <div class="carousel-cell">
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile">קרן השתלמות </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              חיסכון פנסיוני אליו מפרישים כסף בכל חודש, העובד 2.5% (לרוב) מהמשכורת והמעביד 7.5%. כדאי לבקש את ההטבה הזו מהמעסיק בעת חתימת החוזה, שכן הוא אינו מחויב לתת אותה על פי חוק. ניתן למשוך את היתרה בקרן לאחר 6 שנות חיסכון. משיכה של הכספים לפני הזמן תחויב במס על כל הכסף.
+                              שימו לב, לעיתים קרובות מקום העבודה שלכם יעבוד בשיתוף פעולה עם חברה מסויימת אשר תתן לכם את ההצעה הטובה ביותר. אז אל תשכחו לברר. 
+                          </p>
+
+                      </div>
+
+                  </div>
+                  <div class="carousel-cell">
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile ">חסכון פננסי </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              חיסכון גמיש המאפשר לכם להפקיד את הכסף בחברות ביטוח ובבתי השקעות כאשר ניתן לבחור מספר רב של מסלולי השקעות בסכומים ותקופות בלתי מוגבלות. בנוסף ניתן לשנות את מסלולי ההשקעה בכל נקודת זמן ללא עלות, וניתן לקבל הלוואות כנגד הכסף.
+                          </p>
+
+                      </div>
+
+
+                  </div>
+                  <div class="carousel-cell">
+
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile ">פקדון בבנק </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              תכנית חסכון אליה מפקידים סכום כסף מסוים על בסיס חודשי, חד פעמי או שילוב של שניהם. הכסף מופקד לרוב לתקופה שנקבעה מראש. לעתים ניתן למשוך את הכסף בנקודות יציאה שמוגדרות מראש במהלך תקופה זו. על הסכום המופקד בחיסכון מתווספת ריבית שיכולה להיות קבועה או משתנה וחל עליה מס. <br />
+                              פנו לבנק דרך הגעה לסניף, בטלפון או באתר ותבררו מה הפיקדון הכי טוב עבורכם.
+
+                          </p>
+                      </div>
+
+
+                  </div>
+                  <div class="carousel-cell">
+
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile ">קופת גמל להשקעה </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              חיסכון שמאפשר לכם להפקיד כספים לקופת גמל שתנוהל על ידי מנהל השקעות מקצועי. ניתן למשוך את הכסף שנצבר ללא "קנס" בכל עת, גם לפני גיל הפרישה, כמשיכה הונית (סכום חלקי או מלא) או בצורה קצבתית לאחר גיל 60. מי שימשוך את הכסף לאחר גיל 60 יזכה להטבות מס מיוחדות ופטור ממסים אם ימשוך את הכסף כקצבה.
+                              כדי להתחיל ניתן לעשות סקר שוק בין בתי השקעות ולהבין היכן מקבלים ריבית חיובית גבוהה, שמצאנו בית השקעות אמין ניתן לפנות אליהם ולהצטרף כחוסך עצמאי בלי קשר למקום העבודה או כשכיר במידה והמעסיק מוכן לבצע תשלומים לקופת הגמל.
+
+                              <a class="has-text-weight-bold tag is-white is-size-6 is-size-14-mobile linkphoon" target="_blank" href="https://www.kolzchut.org.il/he/%D7%A7%D7%95%D7%A4%D7%AA_%D7%92%D7%9E%D7%9C">   לחצו כדי להבין יותר על קופת גמל </a> <br />
+                          </p>
+
+                      </div>
+
+                  </div>
+                  <div class="carousel-cell">
+
+                      <div class="SavingsContent">
+                          <h2 class="is-size-2 is-size-4-mobile ">קרן פנסיה </h2>
+                          <p class="textSaving is-size-5 is-size-12-mobile ">
+                              תכנית לביטוח המבטיחה לעובד תשלום חודשי לכל חייו בעת פרישתו מעבודה בגיל הפרישה.
+                              איך מתחילים?  בתהליך קליטתכם בעבודה במחלקת כוח אדם תתבקשו לבחור הסדר פנסיוני, המעסיק לא יכול להכתיב לכם במה לבחור אז בדקו אם הייתה לכם קרן פנסיה בעבר ואיזה פנסיה משתלמת יותר .
+                              הפנסיה מבטיחה קצבה לשאריו של המבוטח אם הלך לעולמו וקצבת נכות אם אינו מסוגל לעבוד מבחינה בריאותית. ניתן למשוך את כספי הפיצויים לאחר סיום העבודה וקבלת מכתב שחרור מהמעסיק.
+                              כדי להבין יותר על הפנסיה שלכם -
+                              <a class="has-text-weight-bold tag is-white is-size-6 is-size-14-mobile linkphoon" target="_blank" href="https://www.swiftness.co.il/">   המסלקה הפנסיונית</a> <br />
+                              כדי לראות היכן יש לכם חסכונות פנסיוניים, פוליסות לביטוח חיים וחשבונות בנק
+                              <a class="has-text-weight-bold tag is-white is-size-6 is-size-14-mobile linkphoon" target="_blank" href="https://itur.mof.gov.il/#/main/landing/">
+                                  לחצו כאן
+                              </a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </section>
+
+
+
+      <!--צא'ט סיום'-->
+
+
+      <section id="ClosedSection" style="padding-top: 70px;">
+
+          <div class="columns">
+              <div class="column" style="max-width: 600px">
+
+                  <div class="savingA">
+
+                      <section class="section pt-0 questionA is-flex-direction-column">
+                          <div class="Chat_Savings_B">
+                              <!-- צד ימין -->
+                              <div class="is-flex-direction-column Chat_Savings_A anim">
+
+                                  <figure class="emoji--container_Bank left">
+                                      <img class="is-rounded emoji_Bank" src="images/Angel.png" />
+                                  </figure>
+                                  <img src="images/textbox4-03.png" />
+                                  <span>
+                                     
+
+                                      תזכורתתת לא לשכוח לברר על דמי ניהול!
+                                  </span>
+
+                              </div>
+
+                              <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                                  <figure class="emoji--container_Bank right">
+                                      <img class="is-rounded emoji_Bank" src="images/imoj1.png" />
+                                  </figure>
+                                  <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                                  <span>
+
+                                      מה זה?
+
+                                  </span>
+
+
+
+                              </div>
+
+                              <!-- צד ימין -->
+                              <div class="is-flex-direction-column Chat_Savings_A anim">
+
+                                  <figure class="emoji--container_Bank left">
+                                      <img class="is-rounded emoji_Bank" src="images/Devil.png" />
+                                  </figure>
+                                  <img src="images/textBoxWX-08.png" />
+                                  <span>
+
+                                      סכום שנלקח כל שנה מהסכום שנצבר בחיסכון לחברה שמנהלת אותו. גובה דמי הניהול משפיע מאוד על הריבית
+                                      הנצברת על החיסכון.
+                                  </span>
+                              </div>
+
+
+                              <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                                  <figure class="emoji--container_Bank right">
+                                      <img class="is-rounded emoji_Bank" src="images/Pressed.png" />
+                                  </figure>
+                                  <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                                  <span>
+                                      נישמע מסובך. אפשר דוגמה?
+
+                                  </span>
+
+
+                              </div>
+
+
+
+
+                          </div>
+
+
+
+                      </section>
+                  </div>
+
+              </div>
+
+              <div class="column">
+                  <div>
+                      <div class="savingA">
+
+                          <section class="section pt-0 questionA is-flex-direction-column anim">
+                              <div class="Chat_Savings_B">
+                                  <!-- צד ימין -->
+                                  <div class="is-flex-direction-column Chat_Savings_A ">
+
+                                      <figure class="emoji--container_Bank left">
+                                          <img class="is-rounded emoji_Bank" src="images/2happy.png" />
+                                      </figure>
+                                      <img src="images/textBoxWX-08.png" />
+                                      <span>
+
+                                          ברור!!
+                                          לדוגמה: אם בשנה מסויימת הקרן או הקופה הרוויחה רק 1.5% בשוק ההון
+                                          דמי ניהול של 2% משמעותם שהכסף שחסכתם קטן במקום לגדול, לכן מאוד כדאי להתמקח על גובה דמי הניהול במעמד פתיחת החיסכון.
+                                      </span>
+
+                                  </div>
+
+
+                                  <!-- צד ימין -->
+                                  <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                                      <figure class="emoji--container_Bank right">
+                                          <img class="is-rounded emoji_Bank" src="images/eyebrow.png" />
+                                      </figure>
+                                      <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                                      <span>
+                                          באמת הכרחי לקחת יעוץ כדי לבחור את המסלול הכי מתאים??
+
+                                      </span>
+
+
+
+                                  </div>
+
+
+                                  <div class="is-flex-direction-column Chat_Savings_A anim">
+
+                                      <figure class="emoji--container_Bank left">
+                                          <img class="is-rounded emoji_Bank" src="images/shiny.png" />
+                                      </figure>
+                                      <img src="images/textBoxWX-08.png" />
+                                      <span>
+
+                                          כן, וזה הדבר הכי חכם לעשות, כמו שמתייעצים עם רופא/ה לגבי עניין רפואי כך גם על עניין כלכלי נעזר ביועצים מקצועיים<br />
+                                          <a target="_blank" href="https://www.paamonim.org/he/">הקליקו כאן כדי לעבור לאתר פעמונים ולהבין יותר.</a>
+
+                                      </span>
+
+                                  </div>
+
+
+
+                              </div>
+
+
+
+                          </section>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+      <script>
+
+          //פונקציה להפעלת האנימציה הכללית של האתר, הנפשה
+
+          const images = document.querySelectorAll('.anim');
+          observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.intersectionRatio > 0) {
+                      entry.target.style.animation = 'anim1 1s forwards ease-out ';
+                  }/*${entry.target.dataset.delay}*/
+                  else {
+                      entry.target.style.animation = 'none';
+                  }
+              })
+          })
+          images.forEach(image => {
+              observer.observe(image)
+          })
+
+
+      </script>
+
+
+
+
+
+
+
+
+      <div id="nextBtn StyleBTN">
+          <nav class="pagination is-right" role="navigation" aria-label="pagination">
+              <a class="pagination-previous StyleBTN" href="TheBank.html"> <i class="fas fa-caret-right"></i> לאני והבנק  </a>
+              <a class="pagination-next StyleBTN" href="Paycheck.html">לתלוש שכר  <i class="fas fa-caret-left"></i> </a>
+
+          </nav>
+      </div>
+  </body>
+</html>
+
+
+
+
+
+

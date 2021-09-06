@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+
+    <title>פעמונים | שיראל ואביטל</title>
+
+    <meta name="description" content="אני והבנק" />
+    <meta name="keywords"
+          content="בנקים, כסף,  כלכלה, איך חוסכים, חיסכון, בנק, ריבית, משוחררים, יעד אפקטיבי, עובר ושב, עוש,הוצאות, מינוס, אשראי, צ'ק, מזומן, פעמונים " />
+    <meta name="author" content="שיראל דנינו, אביטל מעיין " />
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png" />
+</head>
+<body>
+    <header>
+        <!-- תפריט ניווט -->
+
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="EffectiveGoal.html">
+                    <img id="logoP" src="images/logo.jpg" />
+                </a>
+
+                <a role="button"
+                   class="navbar-burger"
+                   aria-label="menu"
+                   aria-expanded="false"
+                   data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="EffectiveGoal.html"> יעד אפקטיבי </a>
+                    <a class="navbar-item is-active" href="TheBank.html"> אני והבנק </a>
+                    <a class="navbar-item" href="Savings.html"> חסכונות והשקעות </a>
+                    <a class="navbar-item" href="Paycheck.html"> תלוש שכר </a>
+                    <a class="navbar-item" onclick="on()">  אודות </a>
+                </div>
+
+                <div class="navbar-end"></div>
+            </div>
+        </nav>
+
+        <!-- כניסה לאתר -->
+
+        <section id="OpenSection">
+            <div class="columns">
+                <div class="column" style="max-width: 600px">
+                    <h1 class="title is-size-1 is-size-2-mobile">
+                        אז איך בעצם מתנהלים <br />
+                        <b> מול הבנק?</b>
+                    </h1>
+                </div>
+
+
+                <div class="column">
+                    <div id="introPic" class="OpenPic">
+                        <div style="margin: auto">
+
+                            <div class="PNG-container">
+                                <img  class="myPNG" src="images/TheBank.png" />
+
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- אודות---------------------------------------------------------------------- -->
+
+        <div id="overlay" onclick="off()">
+
+
+            <div class="modal-content has-background-white py-5 px-5 popUp1" style="text-align: center" ;>
+                <h3 class="title Odot" mb-6> </h3>
+
+                <div id="aboutDiv">
+
+                    <h2 class="Odot">אודות </h2>
+                    <p id="odotTxt1">
+                        אפיון ופיתוח: <br />
+                        שיראל דנינו | אביטל מעיין
+                    </p>
+                    <p id="odotTxt2">
+                        אופיין ופותח במסגרת קורס פרויקט גמר:<br />
+                        תשפ"א | 2021
+                    </p>
+
+
+
+                    <img class="HitOdotLogo" src="images/hitLogoBlak.png" /> <br />
+                    <a id="telem" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a> <br />
+
+
+                    <p>   התוצר הופק עבור עמותת<a href="https://www.paamonim.org/he/%D7%A2%D7%9C-%D7%94%D7%90%D7%A8%D7%92%D7%95%D7%9F/"> פעמונים </a> </p>
+
+                    <p>
+                        <b>
+                            עמותת פעמונים היא עמותה חברתית.
+                            העמותה שואפת למציאות שבה משפחות ויחידים בישראל ינהלו חיים כלכליים, מאוזנים ואחראיים בדרך ישרה – מציאות שתסייע בבניית חוסן כלכלי-חברתי.
+                        </b>
+                    </p>
+
+                    <p">
+                        **האמור באתר זה אינו מהווה ייעוץ/שיווק השקעות ו/או
+                        ייעוץ/שיווק פנסיוני ו/או תחליף לייעוץ/שיווק כאמור המתחשב בנתונים ובצרכים המיוחדים של כל אדם.
+                        </p>
+
+
+                        <p>
+                            Credits: This project includes icons by <a href="https://www.freepik.com/">freepik</a>
+
+                        </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- עד כאן אודות---------------------------------------------------------------------- -->
+
+
+
+    </header>
+
+    <section class="Opening_Bank1 columns">
+
+        <div class="column Bank1">
+
+            <section class="section pt-0 bank-question is-flex-direction-column">
+                <div class="Chat_bank">
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/1Bandage.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            ידעת?... שהכסף שלך לא בחיסכון או בשימוש הוא פשוט יושב בעו”ש
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_Savings_A anim ">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/2tongueOut.png" />
+                        </figure>
+                        <img src="images/textbox4-03.png" />
+                        <span>
+                            
+                            ומה רע בזה? לפחות הוא לא מתבזבז.
+
+                        </span>
+
+                    </div>
+
+                    <!-- צד ימין -->
+                    <div class=" column is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/imoj1.png" />
+                        </figure>
+                        <img src="images/textboxB.jpg" />
+                        <span>
+                           
+                            לא רע, סתם מבאס... אם אני אגיד לך שבזמן הזה הכסף שלך יכול לעשות עוד כסף ולצבור ריבית חיובית?
+
+                        </span>
+
+
+
+                    </div>
+                    <!-- צד שמאל -->
+                    <div class="is-flex-direction-column Chat_bank_A anim">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/3surprised.png" />
+                        </figure>
+
+                        <img src="images/textbox4-03.png"/>
+                        <span>
+                            סיקרנת, איך?
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/Sunglasses.png" />
+                        </figure>
+                        <img src="images/textbox1-03.png" />
+                        <span>
+
+                            קליק על הסרטון והכל יתגלה...
+                        </span>
+
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="Opening_Bank column is-half" style="padding: 6px">
+            <h1 class="TitleColor is-size-3 is-size-6-mobile"
+                style="padding-bottom: 18px">
+                <b>  בואו נכיר את העו"ש </b>
+            </h1>
+
+            <div id="f-video" style="padding-bottom: 18px ">
+                <iframe style="border-radius:15px "
+                        width="100%"
+                        height="400"
+                        src="https://www.youtube.com/embed/L3tiIsSLnH8"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+            </div>
+            <p>זמן צפייה: 2.5 דקות | #אני והבנק</p>
+
+
+        </div>
+    </section>
+
+
+    <!--חלק שני -ריבית-->
+
+    <section class="Opening_paragraph columns" id="ribitA">
+        <div class="column Opening_Effective  is-half" style="padding: 6px">
+            <h1 class="TitleColor is-size-3 is-size-6-mobile"
+                style="padding-bottom: 18px">
+                <b>  הגיע הזמן להבין מה זה ריבית </b>
+            </h1>
+
+            <div id="f-video" style="padding-bottom: 18px ">
+
+                <iframe style="border-radius:15px "
+                        width="100%"
+                        height="400" src="https://www.youtube.com/embed/AKoGoii_1VA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+            <p>זמן צפייה: 1 דקות | #אני והבנק</p>
+
+
+            <!--שאלה לנושא הריבית-->
+
+            <div>
+                <form>
+                    <div class="form_wrapperr">
+                        <br />
+                        <br />
+                        <p id="q2">
+                            <b> נכון או לא נכון </b> <br />
+                            <b>  במידה ואתם לוקחים מהבנק הלוואה, ריבית חיובית אומרת שתאלצו להחזיר לבנק יותר כסף </b>
+                        </p> <br />
+                        <label class="spac" for="ansr"><input type="radio" id="ansAA" value="FU" name="ansr" onclick="funckbtn()" /> נכון</label>
+                        <label class="spac" for="ansr"><input type="radio" id="ansBB" value="TR" name="ansr" onclick="funckbtn()" />  לא נכון </label>
+
+                        <!-- כפתור שליחה -->
+                        <label for="sendform">
+                            <input type="button" onclick="Checkans2()" id="sendq2" value="בדקו" />
+                        </label>
+                    </div>
+                    <br />
+                    <!-- דיב תוצאה -->
+                    <div id="feedback2"></div>
+
+                </form>
+
+                <script>
+                    var ansarr2 = document.getElementsByName("ansr");
+                    console.log(ansarr2);
+                    var curans = "";
+                    //בלחיצת כפתור מופעלת הפונקציה
+                    function Checkans2() {
+                        document.getElementById("feedback2").innerHTML = "";
+                        // לולאה שרצה על המערך מניים
+                        for (var i = 0; i < ansarr2.length; i++) {
+                            //בודקת מה  שסומן
+                            if (ansarr2[i].checked) {
+                                //לוקח את הערך שלו אם כן ושם בשתנה
+                                curans = ansarr2[i].value;
+                            }
+                        }
+
+
+                        //במידה והתשובה  נכונה
+                        if (curans == "TR") {
+                            document.getElementById("feedback2").innerHTML = (" כל הכבוד! תשובה נכונה :) ");
+                            document.getElementById("feedback2").setAttribute("class", "greenT");
+                        }
+
+                        //במידה והתשובה לא נכונה
+                        else if (curans == "FU") {
+                            document.getElementById("feedback2").innerHTML = ("תשובה לא נכונה. שימו לב, ריבית חיובית אינה מתייחסת להלוואה. ");
+                            document.getElementById("feedback2").setAttribute("class", "redF");
+                        }
+
+                        //במידה ולא הוזנה תשובה 
+                        else {
+                        document.getElementById("feedback2").innerHTML = ("אופס.. לא בחרת תשובה");
+                            document.getElementById("feedback2").setAttribute("class", "redF", "redFover" );
+                    }
+                    }
+
+
+                </script>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="columns Bank1">
+
+            <section class="section pt-0 Savings-question is-flex-direction-column">
+                <div class="ChatLeft Chat_bank">
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/1Puzzling.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            שמעתי שיש דבר כזה ריבית חיובית, זה נכון?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim ">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/2happy.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            כן ריבית הולכת לשתי הכיוונים היא יכולה להיות
+                            לטובתך אבל גם לרעתך
+                        </span>
+
+                    </div>
+
+                    <!-- צד ימין -->
+
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/Xs.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            בלבלת אותי לגמריי. גם טוב וגם רע?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/Angel.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            כן, אבל הכל תלוי בנסיבות... במקומך הייתי צופה בסרטון
+                        </span>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+
+    </section>
+
+
+    <!--חלק שלישי -להתמקח עם הבנק-->
+
+    <section class="Opening_Bank1 columns">
+
+        <div class="column Bank1">
+
+            <section class="section pt-0 bank-question is-flex-direction-column">
+                <div class="Chat_bank">
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/green.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            משא ומתן עם הבנק? זה יעזור בכלל?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_Savings_A anim">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/kiss.png" />
+                        </figure>
+                        <img src="images/textbox4-03.png" />
+                        <span>
+
+                            כן וזה פשוט! בסרטון יש את כל הטיפים...
+
+                        </span>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="Opening_Bank column is-half" style="padding: 6px">
+            <h1 class="TitleColor is-size-3 is-size-6-mobile "
+                style="padding-bottom: 18px">
+                <b> משא ומתן עם הבנק</b>
+            </h1>
+
+            <div id="f-video" style="padding-bottom: 18px ">
+                <iframe style="border-radius:10px "
+                        width="100%"
+                        height="400"
+                        src="https://www.youtube.com/embed/INaYXziANuA"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+            </div>
+            <p>זמן צפייה: 2 דקות | #אני והבנק</p>
+
+
+        </div>
+    </section>
+
+    <!--  אמצעי תשלום-->
+
+
+    <section class="Opening_paragraph columns" id="ribitA">
+        <div class="Opening_Effective column is-half" style="padding: 6px">
+            <h1 class="TitleColor is-size-3 is-size-6-mobile"
+                style="padding-bottom: 18px">
+                <b>וכעת, הגיע הזמן ללמוד על הצ'ק</b>
+            </h1>
+
+            <div id="f-video" style="padding-bottom: 18px ">
+
+                <iframe style="border-radius:15px "
+                        width="100%"
+                        height="400" src="https://www.youtube.com/embed/NwFNaoq-b1c"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+            <p>זמן צפייה: 2 דקות | #אני והבנק</p>
+
+            <!--שאלה בנושא צ'קים--> 
+
+            <div>
+                <form>
+                    <div class="form_wrapper">
+                        <br />
+                        <br />
+                        <p id="q3">
+                            <b> נכון או לא נכון </b> <br />
+                            <b>  המוטב הוא זה שמכספו נמשך סכום הצ'ק </b>
+                        </p> <br />
+                        <label class="spac" for="ans"><input type="radio" id="ans1A" value="F" name="ans" onclick="funckbtn()" /> נכון</label>
+                        <label class="spac" for="ans"><input type="radio" id="ans2B" value="T" name="ans" onclick="funckbtn()" />  לא נכון </label>
+
+                        <!-- כפתור שליחה -->
+                        <label for="sendform">
+                            <input type="button" onclick="Checkans()" id="sendq3" value="בדקו" />
+                        </label>
+                    </div>
+                    <br />
+                    <!-- דיב תוצאה -->
+                    <div id="feedback3"></div>
+
+                </form>
+
+                <script>
+                    var ansarr = document.getElementsByName("ans");
+                    console.log(ansarr);
+                    var curans = "";
+                    //בלחיצת כפתור מופעלת הפונקציה
+                    function Checkans() {
+                        document.getElementById("feedback3").innerHTML = "";
+                        // לולאה שרצה על המערך מניים
+                        for (var i = 0; i < ansarr.length; i++) {
+                            //בודקת מה  שסומן
+                            if (ansarr[i].checked) {
+                                //לוקח את הערך שלו אם כן ושם בשתנה
+                                curans = ansarr[i].value;
+                            }
+                        }
+
+
+                        //במידה והתשובה  נכונה
+
+                        if (curans == "T") {
+                            document.getElementById("feedback3").innerHTML = (" כל הכבוד! תשובה נכונה :) ");
+                            document.getElementById("feedback3").setAttribute("class", "greenT");
+                        }
+
+                        //במידה והתשובה לא נכונה
+                        else  if  (curans == "F") {
+                            document.getElementById("feedback3").innerHTML = ("תשובה לא נכונה. המוטב הוא היחיד שיכול לקבל את הכסף שבצ'ק. ");
+                            document.getElementById("feedback3").setAttribute("class", "redF");
+                        }
+
+                        //במידה ולא הוזנה תשובה
+                        else {
+                        document.getElementById("feedback3").innerHTML = ("אופס.. לא בחרת תשובה");
+                        document.getElementById("feedback3").setAttribute("class", "redF");
+                        }
+                    }
+                    
+
+
+
+                </script>
+            </div>
+
+        </div>
+        <!--//חלק 4 צקים-->  
+
+        <div class="columns Bank1">
+
+            <section class="column section pt-0 Savings-question is-flex-direction-column">
+                <div class="ChatLeft Chat_bank">
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/blue.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            מי בכלל משתמש בצקים היום?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim ">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/Star.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            צ'ק עוזר במיוחד שרוצים לשלם עבור שכר דירה, לימודים ועוד
+                        </span>
+
+                    </div>
+
+                    <!-- צד ימין -->
+
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/2tongueOut.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            אז חשוב ללמוד איך כותבים אותו?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/heart.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            בטח! בשביל זה בדיוק נועד הסרטון
+                        </span>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <!--חלק 5 כרטיסי אשראי-->
+
+    <section class="Opening_paragraph columns" id="ribitA">
+
+
+
+
+        <div class="column Bank1">
+
+            <section class="section pt-0 Savings-question is-flex-direction-column">
+                <div class="Chat_bank">
+                    <!-- צד ימין -->
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/Ghost.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            לא הבנתי, יש יותר מסוג אחד של כרטיס?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim ">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/towering.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            ברור! וזה הזמן הטוב ביותר ללמוד עליהם
+
+                        </span>
+
+                    </div>
+
+                    <!-- צד ימין -->
+
+                    <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                        <figure class="emoji--container_Bank right">
+                            <img class="is-rounded emoji_Bank" src="images/1Bandage.png" />
+                        </figure>
+                        <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                        <span>
+
+                            אז עכשיו ללחוץ על הסוגים השונים?
+
+                        </span>
+
+
+                        <!-- צד שמאל -->
+                    </div>
+
+                    <div class="is-flex-direction-column Chat_bank_A anim">
+
+                        <figure class="emoji--container_Bank left">
+                            <img class="is-rounded emoji_Bank" src="images/shiny.png" />
+                        </figure>
+                        <img src="images/textBoxW-03.png" />
+                        <span>
+
+                            כן, קלטת את הרעיון
+                        </span>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+
+        <div class="Opening_Effective column is-half"   style="padding: 6px">
+            <h1 class="TitleColor is-size-3 is-size-6-mobile"
+                style="padding-bottom: 18px">
+                <b>קצת על סוגי האשראי </b>
+            </h1>
+
+
+
+
+            <section>
+
+                <!--אקורדיון-->
+
+
+                <div class="collapse-content">
+                    <div class="collapse" id="Credit">
+                        <a class="Credit" href="#Credit">קרדיט</a>
+                        <div class="content">
+                            <div class="inner-content">
+
+                                הוא הכרטיס הנפוץ ביותר שהבנק מוציא, החיוב מהכרטיס יורד פעם בחודש בתאריך לפי בחירת הלקוח מתוך תאריכים נתונים מראש לרוב 2, 10, 15, 20 לחודש.
+                                הכרטיס מאפשר עסקת קרדיט כלומר הלוואה שמאפשרת פריסה של סכום קנייה למספר תשלומים, התשלומים בקרדיט הם למעשה הלוואה בריבית מחברת האשראי. זה אמנם זול יותר ממינוס בבנק אבל יקר יותר מהלוואה מהבנק.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="dabit">
+                        <a class="dabit" href="#dabit">דיירקט/דביט</a>
+                        <div class="content">
+                            <div class="inner-content">
+
+                                כרטיס חיוב מיידי, מתפקד כמו מזומן, חשבון העו"ש מחוייב מיד עם ביצוע העסקה, בכפוף ליתרה בחשבון ולמסגרת האשראי. מומלץ למי שמתקשה לשלוט בהוצאות כי לא ניתן לקנות בו אם אין כסף בחשבון. שימו לב, הכרטיס הזה לא מפורסם ולא משווק כל כך בבנקים. לבנק יש אינטרס שלא תשתמשו בו?
+                                כיוון שלבנק עדיף שתקנו יותר. כך הם יקבלו יותר אחוזים מהקנייה מחברת האשראי וכמובן שאם תכנסו למינוס או תקחו מהבנק הלוואה הם ירוויחו את הריבית שתצטרכו לשלם.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="RollingCredit">
+                        <a class="RollingCredit" href="#RollingCredit">אשראי מתגלגל</a>
+                        <div class="content">
+                            <div class="inner-content">
+
+                                מאפשר לקבוע את גובה החיוב בכל חודש ולהעביר את השאר לחודש הבא אך גובה ריבית גבוה במיוחד כ- 15%.
+                                שימו לב, אם לא תודיעו מה הסכום לחיוב החודש, חברת האשראי מחייבת בסכום נמוך, ואת שאר החיוב מעבירה לחודש הבא בתוספת ריבית גבוהה – כך החוב הולך ותופח, בקיצור לא מומלץ!
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-----צק----->
+
+
+
+
+
+
+    <script>
+
+        //פונקציה להפעלת האנימציה הכללית של האתר, הנפשה
+
+        const images = document.querySelectorAll('.anim');
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.animation = 'anim1 1s forwards ease-out ';
+                }/*${entry.target.dataset.delay}*/
+                else {
+                    entry.target.style.animation = 'none';
+                }
+            })
+        })
+        images.forEach(image => {
+            observer.observe(image)
+        })
+
+
+    </script>
+
+
+    <div id="nextBtn">
+        <nav class="pagination is-right" role="navigation" aria-label="pagination">
+
+            <a class="pagination-previous StyleBTN" href="EffectiveGoal.html"> <i class="fas fa-caret-right"></i> ליעד אפקטיבי</a>
+            <a class="pagination-next StyleBTN" href="Savings.html">  לחסכונות והשקעות <i class="fas fa-caret-left"></i> </a>
+
+
+        </nav>
+    </div>
+</body>
+</html>
+
+
+

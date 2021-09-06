@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+
+    <title>פעמונים | שיראל ואביטל</title>
+
+    <meta name="description" content="חסכונות והשקעות" />
+    <meta
+      name="keywords"
+      content=" כסף,  כלכלה, איך חוסכים, חיסכון, קרן פנסיה, פנסיה, קרן השתלמות, השקעות, קופת גמל, פיקדון, חסכונות, פיקדונות, זכויות, משוחררים, בנק, פעמונים "
+    />
+    <meta name="author" content="שיראל דנינו, אביטל מעיין " />
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png" />
+  </head>
+  <body>
+      <header>
+          <!-- תפריט ניווט -->
+
+          <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                  <a class="navbar-item" href="EffectiveGoal.html">
+                      <img id="logoP" src="images/logo.jpg" />
+                  </a>
+
+                  <a role="button"
+                     class="navbar-burger"
+                     aria-label="menu"
+                     aria-expanded="false"
+                     data-target="navbarBasicExample">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                  </a>
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-end">
+                      <a class="navbar-item" href="EffectiveGoal.html"> יעד אפקטיבי </a>
+                      <a class="navbar-item" href="TheBank.html"> אני והבנק </a>
+                      <a class="navbar-item" href="Savings.html"> חסכונות והשקעות </a>
+                      <a class="navbar-item is-active" href="Paycheck.html"> תלוש שכר </a>
+
+                      <a class="navbar-item" onclick="on()">  אודות </a>
+                  </div>
+
+                  <div class="navbar-end"></div>
+              </div>
+          </nav>
+
+          <!-- כניסה לאתר -->
+
+          <section id="OpenSection">
+              <div class="columns">
+                  <div class="column" style="max-width: 600px">
+                      <h1 class="title is-size-1 is-size-2-mobile">
+                          אז איך קוראים <br />
+                          <b>תלוש שכר?</b>
+
+                      </h1>
+                  </div>
+
+                  <div class="column">
+                      <div id="introPic" class="OpenPic">
+                          <div style="margin: auto">
+
+                              <div class="PNG-container">
+
+                                  <img class="myPNG" src="images/Paycheck1.png" />
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </section>
+
+
+
+
+
+
+          <!-- אודות---------------------------------------------------------------------- -->
+
+          <div id="overlay" onclick="off()">
+
+
+              <div class="modal-content has-background-white py-5 px-5 popUp1" style="text-align: center" ;>
+                  <h3 class="title Odot" mb-6> </h3>
+
+                  <div id="aboutDiv">
+
+                      <h2 class="Odot">אודות </h2>
+                      <p id="odotTxt1">
+                          אפיון ופיתוח: <br />
+                          שיראל דנינו | אביטל מעיין
+                      </p>
+                      <p id="odotTxt2">
+                          אופיין ופותח במסגרת קורס פרויקט גמר:<br />
+                          תשפ"א | 2021
+                      </p>
+
+
+                      <img class="HitOdotLogo" src="images/hitLogoBlak.png" /> <br />
+                      <a id="telem" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a> <br />
+
+
+                      <p>   התוצר הופק עבור עמותת<a href="https://www.paamonim.org/he/%D7%A2%D7%9C-%D7%94%D7%90%D7%A8%D7%92%D7%95%D7%9F/"> פעמונים </a> </p>
+
+                      <p>
+                          <b>
+                              עמותת פעמונים היא עמותה חברתית.
+                              העמותה שואפת למציאות שבה משפחות ויחידים בישראל ינהלו חיים כלכליים, מאוזנים ואחראיים בדרך ישרה – מציאות שתסייע בבניית חוסן כלכלי-חברתי.
+                          </b>
+                      </p>
+
+
+                      <p">
+                          **האמור באתר זה אינו מהווה ייעוץ/שיווק השקעות ו/או
+                          ייעוץ/שיווק פנסיוני ו/או תחליף לייעוץ/שיווק כאמור המתחשב בנתונים ובצרכים המיוחדים של כל אדם.
+                          </p>
+
+
+                          <p>
+                              Credits: This project includes icons by <a href="https://www.freepik.com/">freepik</a>
+
+                          </p>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- עד כאן אודות---------------------------------------------------------------------- -->
+
+
+      </header>
+
+      <section class="Opening_Bank1 ">
+          <div>
+              <p class="is-size-4 is-size-5-mobile  title1" style="padding-bottom:35px">
+                  הגיע הזמן להבין יותר מה אומרים כל המספרים בתלוש שלכם  <br />
+
+                  <span style="color:#fda608">  <b>  עברו על התלוש ותחקרו</b></span>
+
+
+              </p>
+
+          </div>
+          <!-------------------------------------------------------------==========================--------------------------------->
+
+
+
+
+
+      </section>
+
+   
+      <div class="pay">
+
+          <iframe src="https://projects.telem-hit.net/2021/PaamonimForYoungAdults_ShirelAvital/files/paycheck.pdf" width="100%" height="1000" scrolling="auto" frameborder="1" allow="autoplay"></iframe>
+      </div>
+
+
+
+      <div class="payPhoon">
+
+          <iframe src="https://drive.google.com/file/d/1-J4lhbbAA00GlbM2NsIiLyo9pt9F8iC4/preview" width="100%" height="1000"
+                  scrolling="auto" frameborder="1"></iframe>
+
+      </div>
+
+  
+      <div id="nextBtn">
+          <nav class="pagination is-right" role="navigation" aria-label="pagination">
+
+              <a class="pagination-previous StyleBTN" href="Savings.html"> <i class="fas fa-caret-right"></i> לחסכונות והשקעות</a>
+
+
+
+          </nav>
+      </div>
+
+  </body>
+</html>
+
+
+
+
+
+

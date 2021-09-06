@@ -1,0 +1,1374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --maxEmojiSize: 320;
+}
+
+.column {
+  margin-right: 35px;
+}
+
+@font-face {
+    font-family: 'Assistant-SemiBold';
+    src: url('Assistant/Assistant-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Assistant-Regular';
+  src: url('Assistant/Assistant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Assistant-Bold';
+  src: url('Assistant/Assistant-Bold.ttf') format('truetype');
+}
+
+html {
+  /*scroll-behavior: smooth;*/
+}
+
+:root {
+  --primaryColor: #0095db;
+  --videoSectionSize: 70vh;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Assistant, Helvetica, sans-serif;
+  direction: rtl;
+}
+
+p {
+  font-size: 1.2rem;
+}
+/*הגדרות תפריט ניווט*/
+
+.navbar {
+  /*border-bottom: 3px solid var(--primaryColor);*/
+}
+
+#logoP {
+  width: 100px;
+  height: 55px;
+}
+
+.navbar-item img {
+  max-height: unset;
+}
+
+.navbar-burger {
+  top: 10px;
+}
+
+.navbar-item {
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+
+.navbar-item:hover {
+  color: #ff9007 !important;
+  background-color: white !important;
+}
+.navbar-link.is-active,
+a.navbar-item.is-active {
+  font-weight: bolder;
+  color: #2a398b;
+}
+/*סוף- הגדרות תפריט ניווט*/
+.title {
+  color: var(--primaryColor);
+  font-weight: 400;
+  position: relative;
+  top: 40px;
+  padding-right: 65px;
+  padding-top: 60px;
+  font-size: 4rem;
+  z-index: 3;
+}
+
+/*גיפ פתיחה*/
+.video-container {
+  width: 50%;
+  height: 50%;
+  padding-right: 20px;
+}
+
+#myVideo {
+  padding-top: 74px;
+  width: 80%;
+  min-width: 400px;
+  padding-bottom: 35px;
+}
+.myGif {
+  padding-top: 62px;
+  width: 80%;
+  min-width: 140px;
+  max-width: 240px;
+  padding-bottom: 35px;
+}
+
+PNG-container {
+  width: 50%;
+  height: 50%;
+  padding-right: 20px;
+}
+
+.myPNG {
+  padding-top: 68px;
+  width: 80%;
+  min-width: 140px;
+  max-width: 170px;
+  padding-bottom: 35px;
+}
+
+/*צבע אחיד לכותרות*/
+.TitleColor {
+  color: var(--primaryColor);
+}
+
+/*פיסקת פתיחה*/
+.Opening_paragraph {
+  border-top: 3px solid var(--primaryColor);
+  padding-top: 10px;
+  background-color: #8ab9ce14;
+  padding-right: 8px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.Opening_Effective {
+  padding-left: 30px !important;
+  padding-right: 20px !important;
+}
+
+.WhatsLearn {
+  padding-right: 40px !important;
+}
+
+.imag2 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*הגדרות כפתור בדוק - לכל השאלות*/
+
+#sendq, #sendq2, #sendq3 {
+    color: #0b99de;
+    border: 1px solid;
+    padding: 14px;
+    margin: 20px;
+    border-radius: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background-color: white;
+}
+
+
+#sendq:hover,
+#sendq2:hover,
+#sendq3:hover {
+  font-weight: bold;
+  background-color: aliceblue;
+}
+.spac {
+  margin: 5px;
+}
+
+/*#feedback , #feedback2 , #feedback3 {
+    
+    font-weight: bold;
+}*/
+.redF {
+  color: red;
+  font-weight: bold;
+}
+
+.greenT {
+  color: forestgreen !important;
+  font-weight: bold;
+}
+
+
+/*הגדרות עיצוב יעד אפקטיבי*/
+/*  הגדרות מטרות אפקטיביות שיעמדו אחד ליד השני בשורה  */
+#Goal {
+  font-weight: 650px;
+  position: relative;
+  top: 25%;
+  padding-left: 5%;
+}
+
+.BuildGoal {
+  color: white;
+  font-weight: 650px;
+  position: relative;
+  top: 35%;
+}
+
+.Effective_paragraph {
+  background-color: var(--primaryColor);
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+#effective-goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 30px;
+}
+
+#effective-goals > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+#f-video {
+  border-radius: 10px;
+}
+
+
+
+/*  הגדרות האיקון של יעד אפקטיבי  */
+
+#effective-goals img {
+  height: 10vw;
+  max-height: 50px;
+  margin: 0 1rem;
+  padding-left: 23px;
+}
+
+#summoney {
+  margin-right: 80px;
+}
+
+#setgoal {
+  margin-right: -23px;
+}
+
+/*  עיצוב מספר 1 2 3   */
+.num {
+  font-size: 5rem;
+  margin-left: 85px;
+  margin-top: 17px;
+}
+.num::after {
+  /*content: "------";
+  font-size: 5vw;*/
+}
+
+.effective-goals-user-input-div {
+  width: 100%;
+}
+.effective-goals-user-input {
+  float: left;
+}
+/*  הגדרות תיבת טקסט וכפתור  */
+button,
+input,
+select,
+textarea {
+  /* margin-top: 71px; */
+  /* margin-right: -220px; */
+}
+.speceP {
+  padding-top: 70px;
+}
+
+#BtnEG {
+    color: #0b99de;
+    border: 1px solid;
+    padding: 14px;
+    margin: 20px;
+    border-radius: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background-color: #f5fdff;
+}
+
+#BtnEG:hover {
+  font-weight: bold;
+  border-color: #0487de;
+  color: #0095db;
+}
+
+#myEgoal {
+  margin: 0 10px;
+}
+
+input {
+  border-radius: 2px;
+  padding: 8px;
+}
+
+/*אנימציות*/
+
+
+
+/* הגדרות החלק חסכון  */
+#Savings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Savings2 {
+  padding-right: 92px;
+}
+
+.imoj1 {
+  min-width: 10px;
+}
+.Savings1 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Savings-question {
+  padding: 1rem 0;
+  padding-bottom: 70px;
+}
+
+.title1 {
+  color: var(--primaryColor);
+}
+
+/*צ'ט של חסכונות*/
+.savingA {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+questionA {
+  padding: 1rem 0;
+  padding-bottom: 70px;
+}
+.Chat_Savings {
+  position: relative;
+  max-width: 400px;
+}
+
+.text_boxChat {
+  min-width: 312px;
+}
+
+.Chat_Savings {
+  position: relative;
+  max-width: 400px;
+}
+
+.Chat_Savings > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 245px;
+}
+
+.Chat_Savings_B {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-right: 85px;
+  padding-left: 90px;
+}
+
+.Chat_Savings_A {
+  position: relative;
+  max-width: 400px;
+}
+
+.Chat_Savings_A > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 260px;
+}
+
+.emoji--container_Saving {
+  position: absolute;
+  top: -0px;
+}
+
+.emoji--container_Saving.right {
+  right: -65px;
+}
+
+.emoji--container_Saving.left {
+  left: -65px;
+}
+
+.emoji_Saving {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+
+.payPhoon {
+    visibility: hidden;
+}
+
+
+
+
+/* הגדרות השאלות בפרק של חיסכון כך שהטקסט והתמונה יהיו באותה שורה  */
+.question {
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+}
+
+.emoji--container {
+  position: absolute;
+
+  top: -0px;
+}
+
+.emoji--container.right {
+  right: -65px;
+}
+
+.emoji--container.left {
+  left: -65px;
+}
+.emoji {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.textQ {
+  position: relative;
+  max-width: 400px;
+}
+
+.FQ {
+  min-width: 330px;
+}
+
+.textQ > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.question2 {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+}
+
+/*אפשרויות חיסכון*/
+#SavingsOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+
+/*הגדרות הקרוסלה, תפריט + הגדרות עיצוב הטקסט -*/
+/* external css: flickity.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.carousel {
+  background: #fafafa;
+  margin-bottom: 40px;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 30px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #0195db;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.textSaving {
+  max-width: 700px;
+}
+
+.SavingsContent {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  padding-right: 35px;
+}
+
+.carousel-nav .carousel-cell {
+  height: 37px;
+  width: 120px;
+  border-radius: 40px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: var(--primaryColor);
+  /*background:#ff9007;*/
+  border: 2px solid white;
+  color: white;
+  font-weight: bolder;
+}
+
+/*שינוי הנקודות מתחת לקרוסלה*/
+.flickity-page-dots .dot {
+  background: var(--primaryColor) !important;
+  /*background: #ff9007 !important;*/
+}
+
+.NevTitle {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.ManagementFee {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.ManagementFee2 {
+  max-width: 800px;
+}
+
+/*הורדת חצים מהקרוסלה*/
+.flickity-prev-next-button {
+  top: 50%;
+  width: 0px !important;
+  height: 0px !important;
+  border-radius: 0%;
+  transform: translateY(-50%);
+}
+
+/*שינוי צבע הרקע של הקרוסלה*/
+.flickity-slider {
+}
+/*הגדרות הלינק בקרוסלה*/
+.tag:not(body).is-white {
+  color: #0095db;
+}
+
+/*אני והבנק */
+
+#bank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.imoj1 {
+  min-width: 10px;
+}
+
+.Bank1 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bank-question {
+  padding: 1rem 0;
+  padding-bottom: 70px;
+}
+
+.Chat_bank {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+
+}
+
+.ChatLeft {
+    margin-right: 45px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .Chat_bank {
+    padding: 1rem 0;
+  }
+
+  #myVideo {
+    width: auto;
+    min-width: unset;
+  }
+}
+.text_boxChatBank {
+  min-width: 312px;
+}
+
+.Chat_bank_A {
+  position: relative;
+  max-width: 400px;
+}
+
+.Chat_bank_A > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 260px;
+}
+
+.emoji--container_Bank {
+  position: absolute;
+  top: -0px;
+}
+
+.emoji--container_Bank.right {
+  right: -65px;
+}
+
+.emoji--container_Bank.left {
+  left: -65px;
+}
+
+.emoji_Bank {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 500px) {
+  .Chat_banks_A {
+    max-width: 300px;
+  }
+
+  .text_boxChatBank {
+    padding-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .emoji_Bank {
+    display: none;
+  }
+}
+
+.Opening_Bank {
+  padding-left: 30px !important;
+  padding-right: 20px !important;
+}
+
+.Opening_Bank1 {
+  border-top: 3px solid var(--primaryColor);
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+/*אמצעי תשלום טבלה*/
+.How_to_pay {
+  padding-bottom: 20px;
+}
+
+#Payment {
+  padding: 20px;
+  padding-bottom: 500px;
+}
+/* Tabs Name Container */
+.tabs-container {
+  position: relative;
+  background: #2652cc;
+  width: 75px;
+  min-height: 60vh;
+  float: right;
+  z-index: 20;
+}
+/* Tabs Names Label */
+.tabs-container label {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hover effect on tabs names */
+.tabs-container label:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Content area for tabs */
+.tab-content {
+  position: relative;
+  background: #eee;
+  width: calc(100% - 120px);
+  padding: 15px;
+  float: right;
+  box-sizing: border-box;
+  z-index: 19;
+  display: none;
+  min-height: 60vh;
+  color: black;
+}
+.tab-content > h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.tab-content:after {
+  content: '';
+  clear: both;
+}
+/* Hide input radio from users */
+input[name='tab'] {
+  display: none;
+}
+/* Show tab when input checked */
+input[name='tab']:checked + .tab-content {
+  display: block;
+  animation: slide 0.5s forwards;
+}
+
+/* Slide animation for tab contents */
+@keyframes slide {
+  from {
+    right: -95%;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#nextBtn {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+/*אקורדיון*/
+.collapse-content {
+  /*width: 50vw;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);*/
+  padding-top: 15px;
+  width: 43vw;
+  margin: auto;
+}
+
+.collapse {
+  background: #fff;
+}
+
+.collapse a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.9rem 1.8rem;
+  color: #fff;
+  position: relative;
+}
+
+    .collapse a.Credit {
+        background-color: white;
+        color: var(--primaryColor);
+        border: 2px solid;
+    }
+
+.collapse a.dabit {
+  background-color: white;
+  color: var(--primaryColor);
+  border: 2px solid;
+}
+
+.collapse a.RollingCredit {
+  background-color: white;
+  color: var(--primaryColor);
+  border: 2px solid;
+}
+
+.collapse a:before {
+  content: '';
+  border-top: 7px solid var(--primaryColor);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.inner-content {
+  padding: 0.8rem;
+  padding-bottom: 6px;
+  border: 2px solid var(--primaryColor);
+}
+
+.content {
+  max-height: 0em;
+  transition: 0.3s linear 0s;
+  overflow: hidden;
+}
+
+.collapse + .collapse a {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.collapse:target .content {
+  max-height: 15em;
+}
+
+.collapse:target a:before {
+  transform: rotate(-90deg);
+}
+
+
+/*אנימציות*/
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(100);
+    opacity: 1;
+  }
+}
+
+/*עיצוב כפתור*/
+.StyleBTN {
+  color: #0b99de;
+  border: 1px solid;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 14px;
+}
+
+.fa-caret-left:before {
+  padding-right: 7px;
+  content: '\f0d9';
+  padding-top: 1px;
+}
+
+.fa-caret-right:before {
+  content: '\f0da';
+  padding-left: 7px;
+}
+
+.pagination-link:hover,
+.pagination-next:hover,
+.pagination-previous:hover {
+  font-weight: bold;
+  border-color: #0487de;
+  color: #0095db;
+  background-color: #f5fdff;
+}
+
+/*pop-up*/
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.HitOdotLogo {
+  height: auto;
+  max-width: 27%;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.Odot {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primaryColor);
+}
+.popUp1 {
+  border-radius: 22px;
+  font-size: 1rem !important;
+}
+
+
+.pay {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+/*התאמה למוביל*/
+
+
+@media (max-width: 768px) {
+    .collapse-content {
+        width: 58vw;
+        margin: auto;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    .title {
+        padding-bottom: 55px
+    }
+
+    .modal-card, .modal-content {
+        width: 87% !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  
+
+    .textQ {
+        max-width: 300px;
+    }
+
+    .Chat_Savings_A {
+        max-width: 300px;
+    }
+
+    .Chat_Savings {
+        max-width: 300px;
+    }
+
+    .text_boxChat {
+        padding-right: 0px !important;
+    }
+
+    .title {
+        padding-bottom: 55px
+    }
+
+    .pay {
+        display: none;
+    }
+
+    .payPhoon {
+        visibility: visible;
+    }
+
+    .modal-card, .modal-content {
+        width: 87% !important;
+    }
+    .title {
+        padding-right: 0px !important;
+    }
+
+    .myPNG {
+        max-width: 60px !important;
+        padding-top: 0px !important;
+        min-width: 70px;
+    }
+    .emoji_Saving {
+        display: none;
+    }
+    .emoji_Bank{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+    .emoji_Saving {
+        display: none;
+    }
+    .emoji_Bank {
+        display: none;
+    }
+
+    #effective-goals > div > p {
+        font-size: 3rem;
+    }
+
+    .num::after {
+        content: '';
+    }
+
+    .brandSavings, .navbar-tabs {
+        margin-right: -20px;
+        background-color: white;
+    }
+
+    .carousel-cell {
+        height: 550px;
+    }
+
+    .flickity-page-dots {
+        bottom: -90px;
+    }
+
+    .Chat_Savings_B {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .titlePhoon {
+        padding-right: 0px !important;
+    }
+
+    .modal-card, .modal-content {
+        width: 87% !important;
+    }
+    .title {
+        padding-right: 0px !important;
+    }
+    .Chat_bank_A > span {
+        min-width: 220px;
+    }
+
+    .myPNG {
+        max-width: 60px !important;
+        padding-top: 0px !important;
+        min-width: 70px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .emoji_Saving {
+        display: none;
+    }
+    .emoji_Bank {
+        display: none;
+    }
+    .modal-content .has-background-white .py-5 .px-5 {
+        padding-left: 13.5rem !important;
+    }
+
+    .px-5 {
+        padding-left: 10.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .brandSavings, .navbar-tabs {
+        margin-right: -15px;
+        background-color: white;
+    }
+
+
+    .carousel-cell {
+        height: 580px;
+    }
+
+    .flickity-page-dots {
+        bottom: -100px;
+    }
+
+    .Chat_Savings_B {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .titlePhoon {
+        padding-right: 0px !important;
+    }
+
+    .modal-card, .modal-content {
+        width: 87% !important;
+    }
+    .title {
+        padding-right: 0px !important;
+    }
+
+    .myPNG {
+        max-width: 60px !important;
+        padding-top: 0px !important;
+        min-width: 70px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        line-height: 1.3;
+    }
+
+    .Chat_bank_A > span {
+        min-width: 220px;
+    }
+    .collapse-content {
+        width: 47vw;
+    }
+
+    .inner-content {
+        padding: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+        .inner-content h3 {
+            margin-bottom: 0.3rem;
+        }
+
+    #BtnEG {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+
+    #sendq, #sendq2, #sendq3 {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+
+    #nextBtn {
+        padding-top: 350px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    body {
+        line-height: 1.3;
+    }
+
+    .collapse-content {
+        width: 30vw;
+    }
+
+    .inner-content {
+        padding: 0.8rem;
+        font-size: 0.4rem;
+    }
+
+        .inner-content h3 {
+            margin-bottom: 0.3rem;
+        }
+
+    #nextBtn {
+        padding-top: 385px;
+    }
+  
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .emoji_Saving {
+        display: none;
+    }
+    .emoji_Bank {
+        display: none;
+    }
+
+    .pay {
+        display: none;
+    }
+
+    .payPhoon {
+        visibility: visible;
+    }
+
+    .brandSavings, .navbar-tabs {
+        margin-right: -20px;
+        background-color: white;
+    }
+
+    .carousel-cell {
+        height: 570px;
+    }
+
+    .flickity-page-dots {
+        bottom: -90px;
+    }
+
+    .Chat_Savings_B {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .titlePhoon {
+        padding-right: 0px !important;
+    }
+
+    .modal-card, .modal-content {
+        width: 87% !important;
+    }
+    .title {
+        padding-right: 0px !important;
+    }
+
+    .myPNG {
+        max-width: 60px !important;
+        padding-top: 0px !important;
+        min-width: 70px;
+    }
+    #BtnEG {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+
+    #sendq, #sendq2, #sendq3 {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .emoji_Saving {
+        display: none;
+    }
+    .emoji_Bank {
+        display: none;
+    }
+
+    #BtnEG {
+ 
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+
+}
+    #sendq, #sendq2, #sendq3 {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+
+    .Chat_bank_A > span {
+       
+        min-width: 220px;
+    }
+
+}
+
+
+    @media (max-width: 320px) {
+        .emoji_Saving {
+            display: none;
+        }
+        .emoji_Bank {
+            display: none;
+        }
+        .Chat_bank_A > span {
+            min-width: 220px;
+        }
+        .modal-content .has-background-white .py-5 .px-5 {
+            padding-left: 15.5rem !important;
+        }
+
+        .px-5 {
+            padding-left: 14.5rem !important;
+            padding-right: 1.5rem !important;
+        }
+
+        .brandSavings, .navbar-tabs {
+            margin-right: -15px;
+            background-color: white;
+        }
+
+        .carousel-cell {
+            height: 685px;
+        }
+
+        .flickity-page-dots {
+            bottom: -140px;
+        }
+
+        .Chat_Savings_B {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .titlePhoon {
+            padding-right: 0px !important;
+        }
+
+        .modal-card, .modal-content {
+            width: 87% !important;
+        }
+
+        .title {
+            padding-right: 0px !important;
+        }
+
+        .myPNG {
+            max-width: 60px !important;
+            padding-top: 0px !important;
+            min-width: 70px;
+        }
+        #BtnEG {
+            padding-right: 35px !important;
+            padding-left: 35px !important;
+        }
+
+        #sendq, #sendq2, #sendq3 {
+            padding-right: 35px !important;
+            padding-left: 35px !important;
+        }
+    }

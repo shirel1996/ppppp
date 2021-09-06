@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+
+    <title>פעמונים | שיראל ואביטל</title>
+
+    <meta name="description" content="דף הבית" />
+    <meta
+      name="keywords"
+      content="פנסיה, כסף,  כלכלה, איך חוסכים, חיסכון, בנק, זכויות, משוחררים, הצבת מטרה, יעד אפקטיבי, פעמונים "
+    />
+    <meta name="author" content="שיראל דנינו, אביטל מעיין " />
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png" />
+  </head>
+  <body>
+      <header>
+          <!-- תפריט ניווט -->
+
+          <nav class="navbar is-fixed-top  " role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                  <a class="navbar-item" href="EffectiveGoal.html">
+                      <img id="logoP" src="images/logo.jpg" />
+                  </a>
+
+                  <a role="button"
+                     class="navbar-burger"
+                     aria-label="menu"
+                     aria-expanded="false"
+                     data-target="navbarBasicExample">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                  </a>
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-end">
+                      <a class="navbar-item is-active" href="EffectiveGoal.html"> יעד אפקטיבי </a>
+                      <a class="navbar-item" href="TheBank.html"> אני והבנק </a>
+                      <a class="navbar-item" href="Savings.html"> חסכונות והשקעות </a>
+                      <a class="navbar-item" href="Paycheck.html"> תלוש שכר </a>
+
+                      <a class="navbar-item" onclick="on()">  אודות </a>
+                  </div>
+
+                  <div class="navbar-end"></div>
+              </div>
+          </nav>
+
+          <!-- כניסה לאתר -->
+
+          <section id="OpenSection">
+              <div class="columns">
+                  <div class="column" style="max-width: 600px">
+                      <h1 class="title is-size-1 is-size-2-mobile">
+                          בואו לגלות איך לנהל <br />
+                          <b> את הכסף שלכם</b>
+                      </h1>
+                  </div>
+
+                  <div class="column">
+                      <div id="introPic" class="OpenPic">
+                          <div style="margin: auto">
+
+                              <div class="video-container">
+                                  <video id="myVideo" class="bgvid" aria-label="סרטון אווירה, צא'ט אי'מוגי" autoplay loop muted playsinline>
+                                      <source src="video/openPage.mp4" type="video/mp4" />
+                                      video not supported
+                                  </video>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- אודות---------------------------------------------------------------------- -->
+
+          <div id="overlay" onclick="off()">
+
+
+              <div class="modal-content has-background-white py-5 px-5 popUp1" style="text-align: center" ;>
+                  <h3 class="title Odot" mb-6> </h3>
+
+                  <div id="aboutDiv">
+
+                      <h2 class="Odot">אודות </h2>
+                      <p id="odotTxt1">
+                          אפיון ופיתוח: <br />
+                          שיראל דנינו | אביטל מעיין
+                      </p>
+                      <p id="odotTxt2">
+                          אופיין ופותח במסגרת קורס פרויקט גמר:<br />
+                          תשפ"א | 2021
+                      </p>
+
+
+                      <img class="HitOdotLogo" src="images/hitLogoBlak.png" /> <br />
+                      <a id="telem" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a> <br />
+
+
+                      <p>   התוצר הופק עבור עמותת<a href="https://www.paamonim.org/he/%D7%A2%D7%9C-%D7%94%D7%90%D7%A8%D7%92%D7%95%D7%9F/"> פעמונים </a> </p>
+
+                      <p>
+                          <b>
+                              עמותת פעמונים היא עמותה חברתית.
+                              העמותה שואפת למציאות שבה משפחות ויחידים בישראל ינהלו חיים כלכליים, מאוזנים ואחראיים בדרך ישרה – מציאות שתסייע בבניית חוסן כלכלי-חברתי.
+                          </b>
+                      </p>
+
+                      <p">
+                          **האמור באתר זה אינו מהווה ייעוץ/שיווק השקעות ו/או
+                          ייעוץ/שיווק פנסיוני ו/או תחליף לייעוץ/שיווק כאמור המתחשב בנתונים ובצרכים המיוחדים של כל אדם.
+                          </p>
+
+
+                          <p>
+                              Credits: This project includes icons by <a href="https://www.freepik.com/">freepik</a>
+
+                          </p>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- עד כאן אודות---------------------------------------------------------------------- -->
+      </header>
+
+
+
+      <section class="Opening_paragraph columns" style="padding-top: 52px;">
+
+          <!--<div class="column is-half WhatsLearn" style="padding: 6px">
+        <h1 class="TitleColor is-size-3 is-size-6-mobile" style="padding-bottom: 20px">
+
+        </h1>
+
+    </div>-->
+
+          <div class="column " style="padding-right: 60px">
+              <h1 class="TitleColor is-size-1 is-size-2-mobile"
+                  style="padding-bottom: 18px">
+                  <b>הצבת יעד אפקטיבי</b>
+              </h1>
+
+              <p class="is-size-4 is-size-5-mobile">
+                  אז איך בעצם מתנהלים מול הבנק? <br />
+                  בטח שמעתם על חסכונות? השקעות? ריביות? <br />
+
+                  כדי שהכסף לא יברח לכם מהכיסים, אנחנו נסביר לכם איך עושים את זה נכון. <br />
+                  שנתחיל?<br />
+         
+
+                  הדרך הנכונה ביותר לעמוד במטרות ובמיוחד במטרות פיננסיות מתחילה מהגדרת יעד אפקטיבי.  <br />
+                  מה זה אומר? <br />
+                  צפו בפרזנטורית שלנו, היא כבר תסביר לכם הכל
+                 
+
+
+              </p>
+          </div>
+
+
+
+
+
+          <div class="Opening_Effective column is-half" style="padding: 6px">
+
+             
+
+
+              <div id="f-video" style="padding-bottom: 18px ">
+                  <iframe style="border-radius:10px "
+                          width="90%"
+                          height="500"
+                          src="https://www.youtube.com/embed/ZeA3ZGQeoJc" title="YouTube video player"
+                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                          gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+              </div>
+              <p>זמן צפייה: 2 דקות | #יעד אפקטיבי</p>
+
+              <p class="Opening_paragraph1">
+                  את היעד ננסח בהווה חיובי : אני רוצה לחסוך 30,000 שקל כדי שאוכל לטוס
+                  למזרח לחצי שנה בעוד שמונה חודשים (מומלץ להכניס תאריך ספציפי). ככל
+                  שהמטרה תנוסח בצורה יותר מפורטת ומדויקת - כך גדל הסיכוי שתשיגו אותה.
+              </p>
+
+              <br />
+              <div>
+                  <form>
+                      <div class="form_wrapper">
+
+                          <p id="q1"> <b> שאלה! מה לא נחשב עיקרון של כתיבת יעד אפקטיבי? </b></p> <br />
+                          <label class="spac" for="ans"><input type="radio" id="ans1" value="F" name="ans" onclick="funckbtn()" /> ישים</label>
+                          <label class="spac" for="ans"><input type="radio" id="ans4" value="T" name="ans" onclick="funckbtn()" />  קצר וממוקד </label>
+                          <label class="spac" for="ans"><input type="radio" id="ans12" value="F" name="ans" onclick="funckbtn()" /> מדיד</label>
+                          <label class="spac" for="ans"><input type="radio" id="ans3" value="F" name="ans" onclick="funckbtn()" /> חיובי ובזמן הווה</label>
+
+                          <!-- כפתור שליחה -->
+                          <label for="sendform">
+                              <input type="button" onclick="Checkans()" id="sendq" value="בדקו" />
+                          </label>
+                      </div>
+                      <br />
+                      <!-- דיב תוצאה -->
+                      <div id="feedback"></div>
+
+                  </form>
+
+                  <script>
+                      var ansarr = document.getElementsByName("ans");
+                      console.log(ansarr);
+                     
+                      var curans = "";
+                      //בלחיצת כפתור מופעלת הפונקציה
+                      function Checkans() {
+                          document.getElementById("feedback").innerHTML = "";
+                          // לולאה שרצה על המערך מניים
+                          for (var i = 0; i < ansarr.length; i++) {
+                              //בודקת מה  שסומן
+                              if (ansarr[i].checked) {
+                                  //לוקח את הערך שלו אם כן ושם בשתנה
+                                  curans = ansarr[i].value;
+                              }
+                             
+                          }
+
+                            //במידה והתשובה נכונה
+                          if (curans == "T"   ) {
+                              document.getElementById("feedback").innerHTML = (" כל הכבוד! תשובה נכונה :) ");
+                              document.getElementById("feedback").setAttribute("class", "greenT");
+                              //document.getElementById("sendq").disabled = false;
+                              Document.removeClass()
+                          }
+                            //במידה והתשובה לא נכונה
+                          else if(curans == "F")
+                          {
+                              document.getElementById("feedback").innerHTML = ("תשובה לא נכונה, נסו שוב :(");
+                              document.getElementById("feedback").setAttribute("class", "redF");
+                              //document.getElementById("sendq").disabled = false;
+                              Document.removeClass()
+                          }
+
+                              //במידה ולא הוזנה תשובה
+                          else
+                          document.getElementById("feedback").innerHTML = ("אופס.. לא בחרת תשובה");
+                          document.getElementById("feedback").setAttribute("class", "redF");
+                          //document.getElementById("sendq").Checked("class", "gogo");
+                          //document.getElementById("sendq").disabled = true;
+                          Document.removeClass()
+                      }
+
+                    
+
+                  </script>
+              </div>
+
+          </div>
+
+
+
+
+
+          
+
+      </section>
+      
+
+      <!--חלק שני - יעד אפקטיבי-->
+
+      <div class="columns Effective_paragraph">
+          <div class="column " style="max-width: 600px">
+              <!--<section id="calculator">-->
+              <h1 class="BuildGoal  is-size-1 is-size-2-mobile anim" style="font-weight:800;">
+                  מחשבון היעד שלי <br />
+              </h1>
+              <p class="BuildGoal is-size-2 is-size-3-mobile anim">
+                  הבנתם איך מגדירים יעד? <br />
+                  בואו תבנו אחד משלכם
+              </p>
+
+                 
+              <!--</section>-->
+          </div>
+
+          <div class="column ">
+              <div id="introPic">
+                  <div style="margin: auto">
+                      <section class="section px-0 py-1">
+                          <!-- הקונטיינר של כל הלאמנטים -->
+                          <div id="effective-goals" class="mb-5">
+                              <!-- ילד 1 -->
+
+                              <div class="anim" id="setgoal">
+                                  <p class="has-text-white num">
+                                      <b>01</b>
+
+                                  </p>
+
+                                  <div class="is-flex is-flex-direction-column is-align-items-center">
+
+                                      <div class="is-flex is-align-items-center my-3">
+                                         
+
+
+                                          <p class=" has-text-white">הגדירו את המטרה שלכם</p>
+                                      </div>
+                                      <div class="effective-goals-user-input-div">
+                                          <input id="Goaltxt"
+                                                 class="effective-goals-user-input   is-block"
+                                                 type="text" 
+                                                 placeholder="רכב \ טיול"/>
+                                      </div>
+                                  </div>
+                              </div>
+
+
+
+                              <div class="anim" id="setgoal">
+                                  <p class="has-text-white num">
+                                      <b>02</b>
+
+                                  </p>
+
+                                  <div class="is-flex is-flex-direction-column is-align-items-center">
+
+                                      <div class="is-flex is-align-items-center my-3">
+                                       
+                                          <p class=" has-text-white">הגדירו את סכום הכסף</p>
+                                      </div>
+                                      <div class="effective-goals-user-input-div">
+                                          <input id="Moneytxt"
+                                                 class="effective-goals-user-input  is-block"
+                                                 type="text"
+                                                 placeholder="1000 \ 10,000" />
+                                      </div>
+                                  </div>
+                              </div>
+
+
+                              <div class="anim" id="setgoal">
+                                  <p class="has-text-white num">
+                                      <b>03</b>
+
+                                  </p>
+
+                                  <div class="is-flex is-flex-direction-column is-align-items-center">
+
+                                      <div class="is-flex is-align-items-center my-3">
+
+                                          <p class=" has-text-white">הגדירו תאריך לביצוע</p>
+                                      </div>
+                                      <div class="effective-goals-user-input-div ">
+                                          
+                                          <form action="/action_page.php" style="padding: 8px;">
+                                              <label for="birthday"> </label>
+                                              <input type="date" id="Timetxt" name="birthday">
+
+                                          </form>
+
+                                      </div>
+                                    
+                                  </div>
+                              </div>
+
+                              <div class="speceP anim" >
+                                  <input id="BtnEG"
+                                         Onclick="effectiveGoals()"
+                                         type="button"
+                                         value="לקבלת היעד שלי " />
+
+                              </div>
+
+                              <div>
+                                  <p id="myEgoal"
+                                     class="is-size-4 is-size-8-mobile has-text-white"></p>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--איך להגיע אל היעד האפקטיבי שלכם?-->
+
+
+
+      <section class="Opening_paragraph columns ">
+          <div class="Opening_Effective column is-half" style="padding: 6px">
+              <h1 class="TitleColor is-size-3 is-size-6-mobile"
+                  style="padding-bottom: 18px">
+                  <b> איך להגיע אל היעד האפקטיבי שלכם?  </b>
+              </h1>
+
+              <div id="f-video" style="padding-bottom: 18px ">
+
+
+                  <iframe style="border-radius:15px "
+                          width="80%"
+                          height="500" src="https://www.youtube.com/embed/dUmcToJelQc"
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                                               clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              </div>
+
+
+
+              <p>זמן צפייה: 2.5 דקות | #יעד אפקטיבי</p>
+
+
+          </div>
+
+
+          <div class="columns Bank1">
+
+              <section class="section pt-0 Savings-question is-flex-direction-column">
+                  <div class="Chat_bank">
+                      <!-- צד ימין -->
+                      <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                          <figure class="emoji--container_Bank right">
+                              <img class="is-rounded emoji_Bank" src="images/sed.png" />
+                          </figure>
+                          <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                          <span>
+
+                              קצת מבאס כי אם להיות כנה, ממש רציתי לקנות נעליים חדשות
+
+                          </span>
+
+
+                          <!-- צד שמאל -->
+                      </div>
+
+                      <div class="is-flex-direction-column Chat_bank_A anim ">
+
+                          <figure class="emoji--container_Bank left">
+                              <img class="is-rounded emoji_Bank" src="images/Angel.png" />
+                          </figure>
+                          <img src="images/textBoxW-03.png" />
+                          <span>
+                              אם נחשוב לטווח הארוך, נבין שזה או לקנות
+                              עוד זוג שרוב הזמן ישב בארון או לחסוך ולהגיע מהר יותר ליעד שלך
+                          </span>
+
+                      </div>
+
+                      <!-- צד ימין -->
+
+                      <div class="is-flex-direction-column Chat_bank_A has-text-white anim">
+
+                          <figure class="emoji--container_Bank right">
+                              <img class="is-rounded emoji_Bank" src="images/Hearts.png" />
+                          </figure>
+                          <img class="text_boxChatBank" src="images/textbox1-03.png" />
+                          <span>
+
+                              אני רוצה להגיע ליעד שלי!!!
+
+                          </span>
+
+
+                          <!-- צד שמאל -->
+                      </div>
+
+                      <div class="is-flex-direction-column Chat_bank_A anim ">
+
+                          <figure class="emoji--container_Bank left">
+                              <img class="is-rounded emoji_Bank" src="images/Sunglasses.png" />
+                          </figure>
+                          <img src="images/textBoxWX-08.png" />
+                          <span>
+                       
+
+                              אז הנוסחה המושלמת להגעה ליעד היא: <br />
+                              מעקב אחר הוצאות + תיעדוף = חיסכון כספי<br />
+
+                              <a href="https://www.paamonim.org/wp-content/uploads/2015/04/%D7%A9%D7%99%D7%A7%D7%95%D7%A3-%D7%9C%D7%A6%D7%A2%D7%99%D7%A8%D7%99%D7%9D.xlsx">להדפסת טופס מעקב אחר הוצאות- פעמונים</a>
+
+                          </span>
+
+                      </div>
+                  </div>
+
+              </section>
+          </div>
+
+      </section>
+
+      <script>
+
+          //פונקציה להפעלת האנימציה הכללית של האתר, הנפשה
+
+          const images = document.querySelectorAll('.anim');
+          observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.intersectionRatio > 0) {
+                      entry.target.style.animation = 'anim1 1s forwards ease-out ';
+                  }/*${entry.target.dataset.delay}*/
+                  else {
+                      entry.target.style.animation = 'none';
+                  }
+              })
+          })
+          images.forEach(image => {
+              observer.observe(image)
+          })
+
+
+      </script>
+
+      <nav class="pagination is-right" role="navigation" aria-label="pagination">
+          <a class="n"</a>
+          <a class="pagination-next StyleBTN" href="TheBank.html">לאני והבנק <i class="fas fa-caret-left"></i> </a>
+
+      </nav>
+  </body>
+</html>
+
+
+
+
+
+   
